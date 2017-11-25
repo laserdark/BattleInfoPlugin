@@ -97,8 +97,8 @@
         public int[] api_ship_ke { get; set; }
         public int[] api_ship_lv { get; set; }
         public int[][] api_eSlot { get; set; }
-        public int[] api_nowhps { get; set; }
-        public int[] api_maxhps { get; set; }
+        public int[] api_f_nowhps { get; set; }
+        public int[] api_f_maxhps { get; set; }
         public Api_Air_Base_Attack[] api_air_base_attack { get; set; }
         public int api_lost_kind { get; set; }
 
@@ -106,8 +106,8 @@
         int ICommonBattleMembers.api_deck_id { get; set; }
         int[] ICommonBattleMembers.api_ship_ke_combined { get; set; }
         int[] ICommonBattleMembers.api_ship_lv_combined { get; set; }
-        int[] ICommonBattleMembers.api_nowhps_combined { get; set; }
-        int[] ICommonBattleMembers.api_maxhps_combined { get; set; }
+        int[] ICommonBattleMembers.api_f_nowhps_combined { get; set; }
+        int[] ICommonBattleMembers.api_f_maxhps_combined { get; set; }
         int[][] ICommonBattleMembers.api_eSlot_combined { get; set; }
         int[][] ICommonBattleMembers.api_eKyouka { get; set; }
         int[][] ICommonBattleMembers.api_fParam { get; set; }
