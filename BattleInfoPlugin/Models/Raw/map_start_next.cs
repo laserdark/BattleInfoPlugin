@@ -102,6 +102,11 @@
         public Api_Air_Base_Attack[] api_air_base_attack { get; set; }
         public int api_lost_kind { get; set; }
 
+        public int[] api_e_nowhps { get; set; }
+        public int[] api_e_maxhps { get; set; }
+        public int[] api_e_nowhps_combined { get; set; }
+        public int[] api_e_maxhps_combined { get; set; }
+
         #region not exists
         int ICommonBattleMembers.api_deck_id { get; set; }
         int[] ICommonBattleMembers.api_ship_ke_combined { get; set; }
