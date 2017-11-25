@@ -9,17 +9,17 @@ namespace BattleInfoPlugin.Models.Raw
     {
         private int _apiDeckId;
 
-        public dynamic api_dock_id
-        {
-            get { return this._apiDeckId; }
-            set { this._apiDeckId = value is int ? value : Convert.ToInt32(value); }
-        }
+        //public dynamic api_dock_id
+        //{
+        //    get { return this._apiDeckId; }
+        //    set { this._apiDeckId = value is int ? value : Convert.ToInt32(value); }
+        //}
 
-        public int api_deck_id
-        {
-            get { return this._apiDeckId; }
-            set { this._apiDeckId = value; }
-        }
+        public int api_deck_id { get; set; }
+        //{
+        //    get { return this._apiDeckId; }
+        //    set { this._apiDeckId = value; }
+        //}
 
         public int[] api_ship_ke { get; set; }
         public int[] api_ship_lv { get; set; }

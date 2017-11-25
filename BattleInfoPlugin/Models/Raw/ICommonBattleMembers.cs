@@ -46,11 +46,11 @@ namespace BattleInfoPlugin.Models.Raw
 
         public static MastersShipData[] GetEnemyFirstFleetData(this ICommonBattleMembers data)
         {
-            return data.api_ship_ke.GetSection(0)
+            return data.api_ship_ke
                 .ToMastersShipDataArray(
-                    data.api_ship_lv.GetSection(0).ToArray(),
-                    data.api_f_maxhps.GetEnemyData().ToArray(),
-                    data.api_f_nowhps.GetEnemyData().ToArray(),
+                    data.api_ship_lv.ToArray(),
+                    data.api_e_maxhps.ToArray(),
+                    data.api_e_nowhps.ToArray(),
                     data.api_eParam,
                     data.api_eSlot);
         }
@@ -60,8 +60,8 @@ namespace BattleInfoPlugin.Models.Raw
             return data.api_ship_ke_combined?.GetSection(0)
                 .ToMastersShipDataArray(
                     data.api_ship_lv_combined.GetSection(0).ToArray(),
-                    data.api_f_maxhps_combined.GetEnemyData().ToArray(),
-                    data.api_f_nowhps_combined.GetEnemyData().ToArray(),
+                    data.api_e_maxhps_combined.GetEnemyData().ToArray(),
+                    data.api_e_nowhps_combined.GetEnemyData().ToArray(),
                     data.api_eParam_combined,
                     data.api_eSlot_combined);
         }
