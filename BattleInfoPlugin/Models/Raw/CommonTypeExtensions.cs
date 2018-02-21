@@ -23,7 +23,7 @@ namespace BattleInfoPlugin.Models.Raw
             return support.api_damage
                 .Select((damage, index) => new
                 {
-                    target = ToIndex(index, FleetType.Enemy),
+                    target = ToIndex(index, FleetType.Enemy) -1,
                     damage = Convert.ToInt32(damage),
                     critical = support.api_cl_list[index]
                 })
