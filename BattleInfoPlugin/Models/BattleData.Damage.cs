@@ -62,6 +62,7 @@ namespace BattleInfoPlugin.Models
         private void Shelling(Midnight_Hougeki shelling, int friendFleetIndex = 1, int enemyFleetIndex = 1)
         {
             if (shelling == null) return;
+            if (shelling.api_at_eflag == null) return;
 
             var damages = shelling.GetDamages(friendFleetIndex, enemyFleetIndex);
             this.CalcDamages(damages);
